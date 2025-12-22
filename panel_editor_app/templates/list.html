@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available panels</h2>
+<ul>
+  {% for panel in panels %}
+    <li><a href="/edit/{{ panel.name }}">{{ panel.name }}</a></li>
+  {% else %}
+    <li>No panels found.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
