@@ -1,0 +1,7 @@
+# title: Example Panel
+# description: A tiny example panel showing optional header metadata
+# source: PanelApp-lite skeleton
+# created_by: system
+ABCD1
+CFTR
+HBB

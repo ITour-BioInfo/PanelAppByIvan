@@ -1,16 +1,11 @@
-# Recommended GitHub settings
+# GitHub setup checklist
 
-To ensure panel changes are reviewed and recorded properly, we recommend enabling the following settings on the repository's default branch (typically **main**).  These settings can be configured under *Settings → Branches* in the GitHub UI.
+After this reset merges, configure repository governance:
 
-1. **Require a pull request before merging**
-   * Enable *Require pull request reviews before merging*.
-   * Optionally require the branch to be up to date before merging to ensure that CI has run on the latest code.
-2. **Require approvals**
-   * Set *Required approvals* to at least **1**.  This ensures that another curator reviews the panel changes.
-   * Enable *Dismiss stale pull request approvals when new commits are pushed* to force re‑review after updates.
-3. **Require review from Code Owners**
-   * Enable *Require review from Code Owners*.  This will automatically request reviews from the owners specified in `.github/CODEOWNERS` for any files they cover (including `panels/*`).
-4. **Status checks**
-   * Ensure that the `Validate gene panels` workflow passes before allowing merges.  You can do this by selecting it under *Status checks that must pass before merging*.
+1. **Protect the default branch.** Enable branch protection and block force pushes. See GitHub docs on [about protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) and [managing a branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
+2. **Require pull request reviews.** Set minimum approvals to at least one. Reference [about protected branches](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+3. **Require status checks to pass.** Add the `Validate panels` workflow job as a required status check. Learn more in [about status checks](https://docs.github.com/articles/about-status-checks).
+4. **Optional: require code owner reviews.** Once CODEOWNERS is populated, enforce reviews from owners. See [about code owners](https://docs.github.com/articles/about-code-owners).
+5. **Automatic token usage.** For Actions, rely on GitHub’s built-in tokens as described in [automatic token authentication](https://docs.github.com/actions/security-guides/automatic-token-authentication).
 
-These settings help maintain a clear audit trail of who changed which genes and why.  They also prevent accidental direct pushes to the main branch without review.
+These settings help ensure panel updates remain reviewed and validated before merging.
