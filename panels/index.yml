@@ -1,17 +1,14 @@
-- id: hereditary_cancer
-  title: Hereditary Cancer
-  filename: hereditary_cancer.txt
-  owners:
-    - "@ORG/panel-curators"
-
-- id: cardiomyopathy
-  title: Cardiomyopathy
-  filename: cardiomyopathy.txt
-  owners:
-    - "@ORG/panel-curators"
-
-- id: epilepsy
-  title: Epilepsy
-  filename: epilepsy.txt
-  owners:
-    - "@ORG/panel-curators"
+version: 1
+panels:
+  - id: hereditary_cancer
+    title: Hereditary Cancer
+    file: hereditary_cancer.txt
+  - id: cardiomyopathy
+    title: Cardiomyopathy
+    file: cardiomyopathy.txt
+  - id: epilepsy
+    title: Epilepsy
+    file: epilepsy.txt
+  - id: example_panel
+    title: Example Panel
+    file: example_panel.txt

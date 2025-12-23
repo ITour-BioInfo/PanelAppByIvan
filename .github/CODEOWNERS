@@ -1,16 +1,1 @@
-# Code owners for PanelAppByIvan
-#
-# Assign owners to panel files and other parts of the repository.  When a pull request
-# modifies a file covered by a CODEOWNERS rule, GitHub will request a review from
-# the listed users or teams.  Replace the placeholders below with actual GitHub
-# usernames or team slugs.
-
-# All panel files should be reviewed by panel curators
-panels/* @ORG/panel-curators
-
-# Scripts and CI can be reviewed by maintainers
-scripts/* @ORG/panel-curators
-.github/workflows/* @ORG/panel-curators
-
-# Catch‑all: require at least one maintainer review for any other change
-* @ORG/panel-curators
+# Add CODEOWNER entries here (e.g., @example-user). Currently left blank on purpose.

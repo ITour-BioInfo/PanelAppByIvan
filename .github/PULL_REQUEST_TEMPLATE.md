@@ -1,21 +1,17 @@
-## What does this change?
+## Summary
+- What changed?
+- Why did it change?
 
-<!-- Briefly describe what your pull request does. Focus on panels modified and rationale. -->
+## Panels touched
+- [ ] hereditary_cancer
+- [ ] cardiomyopathy
+- [ ] epilepsy
+- [ ] example_panel
+- [ ] Other (specify): ______
 
-## Which panel(s) were changed and why?
-
-- **Panels affected**: <!-- e.g. hereditary_cancer, cardiomyopathy -->
-- **Reasoning**: <!-- Provide a short clinical or assay rationale for each change. -->
-
-## Source or ticket (if applicable)
-
-<!-- Include a link to the issue, ticket or external request that motivated this change. -->
+## Gene-level details
+- Added genes:
+- Removed genes:
 
 ## Validation
-
-- [ ] I have run `python scripts/validate_panels.py` locally and confirmed there are no errors.
-- [ ] The panels are sorted alphabetically and do not contain duplicates or formatting issues.
-
-## Additional notes
-
-<!-- Anything else reviewers should know. -->
+- [ ] Ran `python scripts/validate_panels.py`
